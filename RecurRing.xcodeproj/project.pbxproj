@@ -11,6 +11,8 @@
 		EB92A08E2B93B6A1002E1946 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92A08D2B93B6A1002E1946 /* ContentView.swift */; };
 		EB92A0902B93B6A3002E1946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB92A08F2B93B6A3002E1946 /* Assets.xcassets */; };
 		EB92A0932B93B6A3002E1946 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB92A0922B93B6A3002E1946 /* Preview Assets.xcassets */; };
+		EB92A09A2B93BB72002E1946 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92A0992B93BB72002E1946 /* Models.swift */; };
+		EB92A09C2B93BB90002E1946 /* AlertsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92A09B2B93BB90002E1946 /* AlertsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		EB92A08D2B93B6A1002E1946 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EB92A08F2B93B6A3002E1946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB92A0922B93B6A3002E1946 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EB92A0992B93BB72002E1946 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		EB92A09B2B93BB90002E1946 /* AlertsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		EB92A08A2B93B6A1002E1946 /* RecurRing */ = {
 			isa = PBXGroup;
 			children = (
-				EB92A08B2B93B6A1002E1946 /* RecurRingApp.swift */,
+				EB92A09B2B93BB90002E1946 /* AlertsViewModel.swift */,
 				EB92A08D2B93B6A1002E1946 /* ContentView.swift */,
+				EB92A0992B93BB72002E1946 /* Models.swift */,
+				EB92A08B2B93B6A1002E1946 /* RecurRingApp.swift */,
 				EB92A08F2B93B6A3002E1946 /* Assets.xcassets */,
 				EB92A0912B93B6A3002E1946 /* Preview Content */,
 			);
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB92A09A2B93BB72002E1946 /* Models.swift in Sources */,
 				EB92A08E2B93B6A1002E1946 /* ContentView.swift in Sources */,
 				EB92A08C2B93B6A1002E1946 /* RecurRingApp.swift in Sources */,
+				EB92A09C2B93BB90002E1946 /* AlertsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
