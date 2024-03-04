@@ -12,4 +12,5 @@ struct RecurringAlert: Identifiable, Codable {
     var name: String
     var intervalMinutes: Double
     var isEnabled: Bool
+    var lastEnabled: Date
 }

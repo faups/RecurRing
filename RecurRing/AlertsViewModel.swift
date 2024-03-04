@@ -20,7 +20,7 @@ class AlertsViewModel: ObservableObject {
     }
     
     func addAlert(name: String, interval: Double) {
-        let newAlert = RecurringAlert(name: name, intervalMinutes: interval, isEnabled: true)
+        let newAlert = RecurringAlert(name: name, intervalMinutes: interval, isEnabled: true, lastEnabled: Date())
         alerts.append(newAlert)
         scheduleNotification(for: newAlert)
     }
@@ -30,6 +30,7 @@ class AlertsViewModel: ObservableObject {
             alerts[index].isEnabled.toggle()
             if alerts[index].isEnabled {
                 scheduleNotification(for: alerts[index])
+                alerts[index].lastEnabled = Date()
             } else {
                 cancelNotification(for: alerts[index])
             }

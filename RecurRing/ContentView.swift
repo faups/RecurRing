@@ -17,7 +17,12 @@ struct ContentView: View {
             List {
                 ForEach(viewModel.alerts) { alert in
                     HStack {
-                        Text(alert.name)
+                        VStack(alignment: .leading) {
+                            Text(alert.name)
+                            Text("Every \(String(format: "%.0f", alert.intervalMinutes)) \(alert.intervalMinutes == 1 ? "minute" : "minutes")")
+                                .font(.caption)
+                                .foregroundStyle(.gray)
+                        }
                         Spacer()
                         Toggle("", isOn: Binding(
                             get: { alert.isEnabled },
